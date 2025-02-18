@@ -18,6 +18,12 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install pdo pdo_mysql zip gd exif intl
 
+
+    RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - \
+    && apt-get install -y nodejs
+
+    # Create a symlink so that PHP is available at /usr/local/sbin/php
+    RUN ln -s /usr/local/bin/php /usr/local/sbin/php
     
 
 # Install Composer from the official Composer image
@@ -31,6 +37,8 @@ COPY . /var/www/html
 
 # Install PHP dependencies (you can skip dev dependencies for production)
 RUN composer install --no-dev --optimize-autoloader
+
+RUN npm install
 
 
 # Ensure that the storage and cache directories are writable
