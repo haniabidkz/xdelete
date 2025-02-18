@@ -23,7 +23,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - \
 && apt-get install -y nodejs
 
 # Create a symlink so that PHP is available at /usr/local/sbin/php
-RUN ln -s /usr/local/bin/php /usr/local/sbin/php
+RUN ln -sf /usr/local/bin/php /usr/local/sbin/php
     
 
 # Install Composer from the official Composer image
