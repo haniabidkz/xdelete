@@ -1,0 +1,60 @@
+version: "3.8"
+
+services:
+  # PHP-FPM service for running Laravel
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: laravel-app
+    volumes:
+      - .:/var/www/html:cached
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
+      # Database settings for your Laravel .env
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=xdelete
+      - DB_USERNAME=root
+      - DB_PASSWORD=password
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  # Nginx web server to serve your Laravel application
+  web:
+    image: nginx:stable
+    container_name: nginx-server
+    volumes:
+      - .:/var/www/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "80:80"
+    depends_on:
+      - app
+    networks:
+      - app-network
+
+  # MySQL database container
+  db:
+    image: mysql:8
+    container_name: mysql-db
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=xdelete
+      - MYSQL_USER=ahmed
+      - MYSQL_PASSWORD=password
+    volumes:
+      - dbdata:/var/lib/mysql
+      - ./sql-dumps:/docker-entrypoint-initdb.d
+    networks:
+      - app-network
+
+networks:
+  app-network:
+
+volumes:
+  dbdata:

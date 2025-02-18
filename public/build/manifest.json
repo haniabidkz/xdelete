@@ -1,0 +1,185 @@
+{
+  "resources/css/filament/admin/theme.css": {
+    "file": "assets/theme-BqCa0_3y.css",
+    "src": "resources/css/filament/admin/theme.css",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/css/animate.css": {
+    "file": "assets/animate-YWlFTCb4.css",
+    "src": "resources/themes/anchor/assets-custom/css/animate.css",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/css/app.min.css": {
+    "file": "assets/app-Oj2hY2m3.css",
+    "src": "resources/themes/anchor/assets-custom/css/app.min.css",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/css/bootstrap.min.css": {
+    "file": "assets/bootstrap-CdW2HUq8.css",
+    "src": "resources/themes/anchor/assets-custom/css/bootstrap.min.css",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/css/fontawesome.css": {
+    "file": "assets/fontawesome-Zp_ovY4-.css",
+    "src": "resources/themes/anchor/assets-custom/css/fontawesome.css",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/css/magnific-popup.css": {
+    "file": "assets/magnific-popup-seepD-Mr.css",
+    "src": "resources/themes/anchor/assets-custom/css/magnific-popup.css",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/css/main.css": {
+    "file": "assets/main-ChKwCw2F.css",
+    "src": "resources/themes/anchor/assets-custom/css/main.css",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/css/slick.css": {
+    "file": "assets/slick-BQDR39Kr.css",
+    "src": "resources/themes/anchor/assets-custom/css/slick.css",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-brands-400.eot": {
+    "file": "assets/fa-brands-400-DckZVAXR.eot",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-brands-400.eot"
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-brands-400.svg": {
+    "file": "assets/fa-brands-400-B64ZyEta.svg",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-brands-400.svg"
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-brands-400.ttf": {
+    "file": "assets/fa-brands-400-CrE2PVWA.ttf",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-brands-400.ttf"
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-brands-400.woff": {
+    "file": "assets/fa-brands-400-kK0FQ5N5.woff",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-brands-400.woff"
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-brands-400.woff2": {
+    "file": "assets/fa-brands-400-B9B0FQJq.woff2",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-brands-400.woff2"
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-regular-400.eot": {
+    "file": "assets/fa-regular-400-BJgv9e-P.eot",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-regular-400.eot"
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-regular-400.svg": {
+    "file": "assets/fa-regular-400-CDToj4bb.svg",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-regular-400.svg"
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-regular-400.ttf": {
+    "file": "assets/fa-regular-400-CrYtHrr6.ttf",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-regular-400.ttf"
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-regular-400.woff": {
+    "file": "assets/fa-regular-400-D0k2dGf6.woff",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-regular-400.woff"
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-regular-400.woff2": {
+    "file": "assets/fa-regular-400-83_sh5h9.woff2",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-regular-400.woff2"
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-solid-900.eot": {
+    "file": "assets/fa-solid-900-DCN5Y-DR.eot",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-solid-900.eot"
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-solid-900.svg": {
+    "file": "assets/fa-solid-900-yxPp-O_O.svg",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-solid-900.svg"
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-solid-900.ttf": {
+    "file": "assets/fa-solid-900-BL38lqC-.ttf",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-solid-900.ttf"
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-solid-900.woff": {
+    "file": "assets/fa-solid-900-f8GZlByx.woff",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-solid-900.woff"
+  },
+  "resources/themes/anchor/assets-custom/fonts/fa-solid-900.woff2": {
+    "file": "assets/fa-solid-900-BiazUjGD.woff2",
+    "src": "resources/themes/anchor/assets-custom/fonts/fa-solid-900.woff2"
+  },
+  "resources/themes/anchor/assets-custom/images/blog/backspece.svg": {
+    "file": "assets/backspece-DE4hMQw3.svg",
+    "src": "resources/themes/anchor/assets-custom/images/blog/backspece.svg"
+  },
+  "resources/themes/anchor/assets-custom/images/blog/backspece2.svg": {
+    "file": "assets/backspece2-jc_sQbZw.svg",
+    "src": "resources/themes/anchor/assets-custom/images/blog/backspece2.svg"
+  },
+  "resources/themes/anchor/assets-custom/images/v2/circle.png": {
+    "file": "assets/circle-urPDFSEi.png",
+    "src": "resources/themes/anchor/assets-custom/images/v2/circle.png"
+  },
+  "resources/themes/anchor/assets-custom/js/app.js": {
+    "file": "assets/app-UUXtMTLZ.js",
+    "name": "app",
+    "src": "resources/themes/anchor/assets-custom/js/app.js",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/js/bootstrap.bundle.min.js": {
+    "file": "assets/bootstrap.bundle.min-BjPwiaLe.js",
+    "name": "bootstrap.bundle.min",
+    "src": "resources/themes/anchor/assets-custom/js/bootstrap.bundle.min.js",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/js/countdown.js": {
+    "file": "assets/countdown-BGWknNCR.js",
+    "name": "countdown",
+    "src": "resources/themes/anchor/assets-custom/js/countdown.js",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/js/faq.js": {
+    "file": "assets/faq-CjhWDxus.js",
+    "name": "faq",
+    "src": "resources/themes/anchor/assets-custom/js/faq.js",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/js/isotope.pkgd.min.js": {
+    "file": "assets/isotope.pkgd.min-CnOvNssl.js",
+    "name": "isotope.pkgd.min",
+    "src": "resources/themes/anchor/assets-custom/js/isotope.pkgd.min.js",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/js/jquery-3.6.0.min.js": {
+    "file": "assets/jquery-3.6.0.min-5GtrIU7X.js",
+    "name": "jquery-3.6.0.min",
+    "src": "resources/themes/anchor/assets-custom/js/jquery-3.6.0.min.js",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/js/jquery.magnific-popup.min.js": {
+    "file": "assets/jquery.magnific-popup.min-Bcz67zHe.js",
+    "name": "jquery.magnific-popup.min",
+    "src": "resources/themes/anchor/assets-custom/js/jquery.magnific-popup.min.js",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/js/menu/menu.js": {
+    "file": "assets/menu-BqZS0g9R.js",
+    "name": "menu",
+    "src": "resources/themes/anchor/assets-custom/js/menu/menu.js",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/js/slick.js": {
+    "file": "assets/slick-DSrJqtsF.js",
+    "name": "slick",
+    "src": "resources/themes/anchor/assets-custom/js/slick.js",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets-custom/js/wow.min.js": {
+    "file": "assets/wow.min-BxSH8Ilx.js",
+    "name": "wow.min",
+    "src": "resources/themes/anchor/assets-custom/js/wow.min.js",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets/css/app.css": {
+    "file": "assets/app-DOv_ucQG.css",
+    "src": "resources/themes/anchor/assets/css/app.css",
+    "isEntry": true
+  },
+  "resources/themes/anchor/assets/js/app.js": {
+    "file": "assets/app-CaUPGaqM.js",
+    "name": "app",
+    "src": "resources/themes/anchor/assets/js/app.js",
+    "isEntry": true
+  }
+}
