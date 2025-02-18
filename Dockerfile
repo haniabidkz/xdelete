@@ -29,7 +29,7 @@ RUN ln -s /usr/local/bin/php /usr/local/sbin/php
 # Install Composer from the official Composer image
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-RUN mkdir -p /usr/local/sbin/php-fpm && ln -sf /usr/bin/composer /usr/local/sbin/php-fpm/composer
+RUN ln -s /usr/bin/composer /usr/local/sbin/php-fpm/composer
 
 
 
