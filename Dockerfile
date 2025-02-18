@@ -32,8 +32,8 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 # RUN ln -sf /usr/bin/composer /usr/local/sbin/composer
 
 
-COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
-RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+# COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+# RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 # Set working directory inside the container
 WORKDIR /var/www/html
@@ -54,7 +54,7 @@ RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cac
 # Expose the port that PHP-FPM listens on
 EXPOSE 9000
 
-ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+# ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 
 # Start PHP-FPM when the container starts
 CMD ["php-fpm"]
