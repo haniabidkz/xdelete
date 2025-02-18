@@ -19,6 +19,7 @@ services:
       - DB_DATABASE=xdelete
       - DB_USERNAME=root
       - DB_PASSWORD=password
+      - COMPOSER_BINARY=/usr/bin/composer
     depends_on:
       - db
     networks:
