@@ -19,7 +19,7 @@ services:
       - DB_DATABASE=xdelete
       - DB_USERNAME=root
       - DB_PASSWORD=password
-      - PHP_BINARY=/usr/local/bin/php
+      - PHP_BINARY=/usr/local/sbin/php
       - COMPOSER_BINARY=/usr/bin/composer
     depends_on:
       - db

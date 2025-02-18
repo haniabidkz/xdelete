@@ -23,16 +23,17 @@ RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - \
 && apt-get install -y nodejs
 
 # Create a symlink so that PHP is available at /usr/local/sbin/php
-RUN ln -sf /usr/local/bin/php /usr/local/sbin/php
+# RUN ln -sf /usr/local/bin/php /usr/local/sbin/php
     
 
 # Install Composer from the official Composer image
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
-RUN ln -sf /usr/bin/composer /usr/local/sbin/composer
+# RUN ln -sf /usr/bin/composer /usr/local/sbin/composer
 
 
-
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 # Set working directory inside the container
 WORKDIR /var/www/html
@@ -52,6 +53,8 @@ RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cac
 
 # Expose the port that PHP-FPM listens on
 EXPOSE 9000
+
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
 
 # Start PHP-FPM when the container starts
 CMD ["php-fpm"]
