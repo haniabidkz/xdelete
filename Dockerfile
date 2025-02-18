@@ -32,6 +32,8 @@ COPY . /var/www/html
 # Install PHP dependencies (you can skip dev dependencies for production)
 RUN composer install --no-dev --optimize-autoloader
 
+RUN npm install
+
 # Ensure that the storage and cache directories are writable
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
