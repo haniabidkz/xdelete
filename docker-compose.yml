@@ -77,7 +77,7 @@ services:
 
 
   queue:
-    image: php-laravel:latest
+    image: test123
     container_name: laravel-queue
     working_dir: /var/www/html
     restart: always
