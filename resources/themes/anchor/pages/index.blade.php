@@ -28,7 +28,7 @@ name('home');
             <p>Our proprietary platform streamlines your X, formerly Twitter, page with ease. Delete X posts using our filtering tool. Then, let TweetDelete do the hard work and bulk delete all your tweets/posts. It's that simple. Really.
             </p>
             <div class="xdelete-hero-btn-wrap">
-              <a class="xdelete-default-btn pill" href="sign-up.html"> <span>Sign up for free</span> </a>
+              <a class="xdelete-default-btn pill" href="{{route('twitter.login'))}}"> <span>Sign in with X.com</span> </a>
               <a class="xdelete-login-btn m-0" href="service.html">View all features</a>
             </div>
           </div>
