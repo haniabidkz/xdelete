@@ -53,9 +53,9 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-      volumes:
-      - dbdata:/var/lib/mysql
-      - ./sql-dumps:/docker-entrypoint-initdb.d
+    volumes:
+    - dbdata:/var/lib/mysql
+    - ./sql-dumps:/docker-entrypoint-initdb.d
     networks:
       - app-network
 
