@@ -48,7 +48,12 @@ services:
       - MYSQL_DATABASE=xdelete
       - MYSQL_USER=ahmed
       - MYSQL_PASSWORD=password
-    volumes:
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      volumes:
       - dbdata:/var/lib/mysql
       - ./sql-dumps:/docker-entrypoint-initdb.d
     networks:
@@ -72,7 +77,8 @@ services:
       - DB_USERNAME=root
       - DB_PASSWORD=password
     depends_on:
-      - db
+      db:
+      condition: service_healthy
     networks:
       - app-network
 
