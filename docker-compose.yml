@@ -83,7 +83,7 @@ services:
     container_name: laravel-queue
     working_dir: /var/www/html
     command: php artisan queue:work
-    restart: always,
+    restart: always
     depends_on:
         - app
         - web
