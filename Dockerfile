@@ -44,7 +44,7 @@ WORKDIR /var/www/html
 COPY . /var/www/html
 
 # Install PHP dependencies (you can skip dev dependencies for production)
-RUN composer install --no-dev --optimize-autoloader
+# RUN composer install --no-dev --optimize-autoloader
 
 
 RUN npm install
