@@ -56,23 +56,37 @@ services:
 
 
 
+  # queue:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   container_name: laravel-queue
+  #   command: php artisan queue:work --sleep=3 --tries=3
+  #   volumes:
+  #     - .:/var/www/html:cached
+  #   environment:
+  #     - APP_ENV=local
+  #     - APP_DEBUG=true
+  #     # Include any other environment variables that your app needs
+  #   depends_on:
+  #     - db
+  #     - app
+  #   networks:
+  #     - app-network
+
+
+
   queue:
-    build:
-      context: .
-      dockerfile: Dockerfile
     container_name: laravel-queue
-    command: php artisan queue:work --sleep=3 --tries=3
-    volumes:
-      - .:/var/www/html:cached
-    environment:
-      - APP_ENV=local
-      - APP_DEBUG=true
-      # Include any other environment variables that your app needs
+    restart: always
+    working_dir: /var/www/html
+    command: php artisan queue:work
     depends_on:
-      - db
-      - app
+        - app
+    volumes:
+        - .:/var/www/html:cached
     networks:
-      - app-network
+        - app-network
 
 networks:
   app-network:
