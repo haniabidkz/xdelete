@@ -10,6 +10,8 @@ services:
     volumes:
       - .:/var/www/html:cached
     environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
       # Database settings for your Laravel .env
       - DB_CONNECTION=mysql
       - DB_HOST=db
@@ -17,7 +19,7 @@ services:
       - DB_DATABASE=xdelete
       - DB_USERNAME=root
       - DB_PASSWORD=password
-     
+
     depends_on:
       - db
     networks:
@@ -66,6 +68,8 @@ services:
     volumes:
       - .:/var/www/html:cached
     environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
       - DB_CONNECTION=mysql
       - DB_HOST=db
       - DB_PORT=3306
