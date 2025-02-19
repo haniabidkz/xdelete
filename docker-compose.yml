@@ -77,13 +77,16 @@ services:
 
 
   queue:
-    image: test123
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: laravel-queue
     working_dir: /var/www/html
-    restart: always
     command: php artisan queue:work
+    restart: always,
     depends_on:
         - app
+        - web
     volumes:
         - .:/var/www/html
     networks:
