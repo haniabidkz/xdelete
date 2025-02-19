@@ -11,7 +11,7 @@ services:
       - .:/var/www/html:cached
     environment:
       - APP_ENV=local
-      - APP_DEBUG=true
+      - APP_DEBUG=false
       # Database settings for your Laravel .env
       - DB_CONNECTION=mysql
       - DB_HOST=db
@@ -69,7 +69,7 @@ services:
       - .:/var/www/html:cached
     environment:
       - APP_ENV=local
-      - APP_DEBUG=true
+      - APP_DEBUG=false
       - DB_CONNECTION=mysql
       - DB_HOST=db
       - DB_PORT=3306
